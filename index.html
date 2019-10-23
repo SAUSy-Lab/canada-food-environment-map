@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Canada Food Environment Map</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <link rel="shortcut icon" type="image/png" href="web/img/grocery_maki.png"/>
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css' type='text/css' />
+    <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+    <link href='web/map.css' rel='stylesheet' />
+
+</head>
+<body>
+
+
+
+<div id='bar'>
+
+  <div id='title'>
+    <h1><b>Canada Food Environment Map</b></h1>
+  </div>
+
+  <div id='title_bar'>
+  </div>
+
+  <div id='query_time'>
+    <p><b>Date</b></p>
+
+  </div>
+
+  <div id='query_metric'>
+
+    <div id='metric_button_title'><p><b>Select Measure:</b></p></div>
+    <div onclick='measure_switch("Z1")' onmouseover='textcolouron("Z1")' onmouseout='textcolouroff("Z1")' id='Z1'><p>Z_score_1</p></div>
+    <div onclick='measure_switch("Z2")' onmouseover='textcolouron("Z2")' onmouseout='textcolouroff("Z2")' id='Z2'><p>Z_score_2</p></div>
+    <div onclick='measure_switch("Z3")' onmouseover='textcolouron("Z3")' onmouseout='textcolouroff("Z3")' id='Z3'><p>Z_score_3</p></div>
+    <div onclick='measure_switch("C1")' onmouseover='textcolouron("C1")' onmouseout='textcolouroff("C1")' id='C1'><p>Count_1</p></div>
+    <div onclick='measure_switch("C2")' onmouseover='textcolouron("C2")' onmouseout='textcolouroff("C2")' id='C2'><p>Count_2</p></div>
+    <div id='metric_button_title'><p>
+<a href="https://github.com/SAUSy-Lab/canada-food-environment-map" target="_blank">More Information</a>
+</p></div>
+
+
+  </div>
+
+  <div id='notes'>
+    <p><b>under development :)</b></p>
+
+  </div>
+
+
+</div>
+
+<div id='map'></div>
+
+
+
+
+
+
+
+
+<script src='web/map.js'>
+</script>
+
+</body>
+</html>
