@@ -1,0 +1,124 @@
+
+body { margin:0; padding:0; }
+
+
+
+
+#bar {
+  position:absolute;
+  width: 380px;
+  height: calc(100vh);
+}
+
+
+
+#title {
+  height: 39px;
+  padding: 0px;
+  margin: 0px;
+  border-bottom: solid 1px gray;
+}
+
+#title_bar {
+  height: 4px;
+  padding: 0px;
+  margin: 0px;
+  border-bottom: solid 1px gray;
+}
+
+#title h1 {
+  padding: 8px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+
+#query_time {
+  height: 56px;
+  padding: 0px;
+  margin: 0px;
+  border-bottom: solid 1px lightgray;
+}
+
+#query_time p {
+  padding-top: 8px;
+  padding-left: 8px;
+  margin: 0px;
+
+    font-family: 'Source Sans Pro', sans-serif;
+
+  font-size: 12px;
+}
+
+#query_metric{
+  height: 180px;
+  padding: 0px;
+  margin: 0px;
+  border-bottom: solid 1px lightgray;
+}
+
+#query_metric p {
+  margin: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+}
+
+#query_metric a {
+  margin: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  color: blue;
+  text-decoration: none;
+}
+
+#metric_button_title {
+  width: 150px;
+  height: 20px;
+  float: left;
+  padding-top: 5px;
+  padding-left: 10px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+#Z1, #Z2, #Z3, #C1, #C2 {
+  width: 150px;
+  height: 20px;
+  float: left;
+  padding-top: 5px;
+  padding-left: 10px;
+  cursor: pointer;
+  opacity: 1;
+  /* border: solid 1px; */
+}
+#Z1 {
+  color: red;
+}
+
+#notes{
+  height: 56px;
+  padding: 0px;
+  margin: 0px;
+  border-bottom: solid 1px lightgray;
+}
+
+#notes p {
+  padding-top: 8px;
+  padding-left: 8px;
+  margin: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+#map {
+
+  top:0;
+  bottom:0;
+  width:calc(100% - 380px);
+  /* overflow:hidden; */
+  height:calc(100vh);
+  border-left: solid 1px;
+  float: right;
+  overflow: auto;
+}
